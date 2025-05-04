@@ -10,5 +10,4 @@ function calculateCost(){
 
     document.getElementById('result').innerText = `the cost of your groceries is: ${cost}`;
 
-
 }
