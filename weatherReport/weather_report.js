@@ -1,7 +1,7 @@
 function showweatherDetails(event) {
     event.preventDefault();
     const city = document.getElementById('city').value;
-    const apiKey = 'd5fce40f96f333694cc1cec03beb1d32'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = ''; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     fetch(apiUrl)
     .then(response => response.json())
@@ -21,7 +21,7 @@ function LatLongWeather(event) {
     event.preventDefault();
     const lat = document.getElementById('lat').value.trim();
     const lon = document.getElementById('lon').value.trim();
-    const apiKey = 'd5fce40f96f333694cc1cec03beb1d32';
+    const apiKey = '';
     const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
 
